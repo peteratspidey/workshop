@@ -42,7 +42,7 @@ mkdir decode
 touch file1
 ```
 
-## ### creating a file using cat
+### creating a file using cat
 ```bash
 cat >file2
 ```
@@ -58,14 +58,14 @@ gedit file3
 vi file4
 ```
 
-*entering in the insert mode using i*
-*exiting using esc key*
-*writing mode :w*
-*quit :q*
+* entering in the insert mode using i
+* exiting using esc key
+* writing mode :w
+* quit :q
 
 ***for changing the things into whole file***
 `:%s/aging/AGING/g `
-*g means globally'*
+*g means globally*
 *replace the word aging with the word u want to replace and AGING with the word u want to add inplace*
 
 ### downloding the file using wget and curl
@@ -114,9 +114,9 @@ chmod 750 <filename>
 * 4 for read
 * 2 for write
 * 1 for execute
-*first charachter of no is for owner*
-*second charchter of no is for group*
-*third charachter of no is for others*
+* first charachter of no is for owner
+* second charchter of no is for group
+* third charachter of no is for others
 ***in this case  7(4+2+1) means owner has read,write and execute permission, while 5(4+1) means group has read and execute permission and others hav 1 means only execute permission*** 
 
 ### giving permission alphabetic way
@@ -133,6 +133,8 @@ chmod g+r <filename>
 * r stands for read permission
 * w stands for write permission
 * x stands for execute permission
+* + stands for adding permission
+* - means removing permission
 
 ## compress the file
 ```bash
