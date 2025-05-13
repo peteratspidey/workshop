@@ -111,9 +111,9 @@ wc <filename>
 ```bash
 chmod 750 <filename> 
 ```
-*4 for read
-*2 for write
-*1 for execute
+* 4 for read
+* 2 for write
+* 1 for execute
 *first charachter of no is for owner*
 *second charchter of no is for group*
 *third charachter of no is for others*
@@ -127,12 +127,12 @@ chmod u+x <filename>
 ```bash
 chmod g+r <filename>
 ```
-*u is for user
-*g is for group
-*o is for others
-*r stands for read permission
-*w stands for write permission
-*x stands for execute permission
+* u is for user
+* g is for group
+* o is for others
+* r stands for read permission
+* w stands for write permission
+* x stands for execute permission
 
 ## compress the file
 ```bash
