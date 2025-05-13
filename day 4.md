@@ -10,30 +10,39 @@
   ```
 
 ## for assigning a variable use assignment operator
-` a = 10 `
-_a is the variable and 10 is the constant _
+```r
+a = 10
+```
+`a is the variable and 10 is the constant`
 
-_ if we assign new value to a it will change _
+` if we assign new value to a it will change `
+
 ## assigning a string to a variable
-` a = "this is a string" `
+```r
+a = "this is a string"
+```
+` meaning of the double quote is as it is `
 
-*** meaning of the double quote is as it is***
 ## printing a variable
 ```r
 print (a)
 ```
 
 ## data structure
-### vector - 1D data structure
-#### need a c- function
-``` my_vector = c(10,21,"DECODE") 
+` vector - 1D data structure`
+` need a c- function`
+```r
+ my_vector = c(10,21,"DECODE") 
 class_students = c("avinash", "sam", "rudra", "matt", "phillip")
 print(class_students[1]) 
-print (class_students[c(1,3,5)]) ```
-*** use of combine function ****
+print (class_students[c(1,3,5)])
+```
+` use of combine function `
 
 ## ignoring the elements on basis of index
-`print (class_students[-4]`
+```r
+print (class_students[-4]
+```
 *this will ignore 4th elemnt but print rest*
 
 ## other basics functions
