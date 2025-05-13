@@ -25,7 +25,7 @@ pwd
 ```bash
  ls -lah 
  ```
- `-l` *long listing format `-a` *include hidden content* `-h` *human-readable size*
+ `-l` *long listing format* `-a` *include hidden content* `-h` *human-readable size*
  
 ```bash
  ls -lrt 
