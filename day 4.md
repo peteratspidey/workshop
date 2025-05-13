@@ -19,8 +19,9 @@ _ if we assign new value to a it will change _
 
 *** meaning of the double quote is as it is***
 ## printing a variable
-`r
-print (a)`
+```r
+print (a)
+```
 
 ## data structure
 ### vector - 1D data structure
