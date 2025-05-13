@@ -5,15 +5,15 @@
  ```
 
 ## for writing the comment use "#"
-```r
+```
   # this line is a comment 
   ```
 
 ## for assigning a variable use assignment operator
 ` a = 10 `
-* a is the variable and 10 is the constant *
+_a is the variable and 10 is the constant _
 
-* if we assign new value to a it will change *
+_ if we assign new value to a it will change _
 ## assigning a string to a variable
 ` a = "this is a string" `
 
