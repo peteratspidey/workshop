@@ -5,16 +5,15 @@
  ```
 
 ## for writing the comment use "#"
-```
+```r
   # this line is a comment 
-  ```
+```
 
 ## for assigning a variable use assignment operator
 ```r
 a = 10
 ```
 `a is the variable and 10 is the constant`
-
 *if we assign new value to a it will change*
 
 ## assigning a string to a variable
@@ -25,7 +24,7 @@ a = "this is a string"
 
 ## printing a variable
 ```r
-print (a)
+print(a)
 ```
 
 ## data structure
