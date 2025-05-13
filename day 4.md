@@ -19,7 +19,8 @@
 
 *** meaning of the double quote is as it is***
 ## printing a variable
-` print (a)`
+`r
+print (a)`
 
 ## data structure
 ### vector - 1D data structure
