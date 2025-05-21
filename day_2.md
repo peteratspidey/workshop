@@ -140,6 +140,10 @@ chmod g+r <filename>
 ```bash
 gzip <filename> 
 ```
+## unzip the file 
+```bash
+unzip <filename>
+```
 
 ## for getting the help and reading manual
 ```bash
