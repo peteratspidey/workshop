@@ -6,4 +6,6 @@
   * contain oligonucleotide adapters that binds tha DNA fragments
 
 ## the details of the fastQ file 
-* contains a $ line descriptions 
+* contains a 4 line descriptions
+* ![Workshop Screenshot](https://github.com/peteratspidey/workshop/raw/main/Screenshot%20from%202025-05-21%2011-05-16.png)
+
