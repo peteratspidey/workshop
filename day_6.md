@@ -7,5 +7,7 @@
 
 ## the details of the fastQ file 
 * contains a 4 line descriptions
-* ![Workshop Screenshot](https://github.com/peteratspidey/workshop/raw/main/Screenshot%20from%202025-05-21%2011-05-16.png)
-
+  1. line describes the ID, lengths etc of the sequence
+  2. line2 contain the FASTA sequence
+  3. line3 same as line1
+  4. line4 quality value of each base in the form of phred scores (0-93)
