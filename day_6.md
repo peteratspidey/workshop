@@ -15,12 +15,13 @@
   4. line4 quality value of each base in the form of phred scores (0-93) represented as ASCII 33 to 126
       - `~` is the best score
       - `!` is the worse score 
-***when u run fastqc on a fastq file it produces: compressed folder with***
+
+## when u run fastqc on a fastq file it produces: compressed folder with
 * fastqc_data.txt - detailed analysis report
 * summary.txt - pass/fail/warnings for each module
 * Images/ - graphical plots for each quality metric.
 
-##details of the fastqc_data.txt (main output)
+## details of the fastqc_data.txt (main output)
 `>>Basic Statistics` - Info about the file: filename, total sequences, GC content, etc.
 
 `>>Per base sequence quality` - Boxplots of Phred scores across all bases.
@@ -50,4 +51,42 @@ Each section starts with `>>Section Name` and ends with `>>END_MODULE`.
 
 
 ## trimmomatic
+* tool for trimming and cleaning illumina sequencing data.
+* it is used to
+ * remove adapters
+ * trim low quality bases
+ * discard short or poor quality reads
 
+***This is often the first step in NGS data analysis before alignment or assembly.***
+
+### features of the trimmomatic
+1. adapter trimming - removes adapter sequences that can interfere with analysis.
+2. quality trimming - cuts bases from read ends if quality is below a threshold.
+3. slidling window - scan reads in a window and trims when average qaulity drops
+4. minimum length filter - Discards reads that become too short after trimming
+5. paired-end and single-end support - Can handle both types of reads
+6. mutlithreading - Speeds up processing using multiple CPU cores
+
+## installation of FASTQC (if not installed already)
+
+```bash
+Ubuntu / Mint: sudo apt install default-jre
+```
+## to check the installed verion of tha java
+```bash
+java --version
+```
+## install perl
+```bash
+sudo apt install perl
+```
+## download FASTQC file and extract it from [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc)
+
+## change the permission of the fastqc file
+```bash
+chmod 755 fastqc
+```
+## run the fastqc perl file
+```bash
+./fastqc
+```
