@@ -14,6 +14,8 @@ sudo apt update -qq
 ```bash
 sudo apt install --no-install-recommends software-properties-common dirmngr
 ```
+`--no install recommends` install only the main packages, not extra recommended ones 
+
 ### add the signing key (by Michael Rutter) for these repos
 # To verify key, run 
 ```bash
