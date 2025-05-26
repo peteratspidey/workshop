@@ -15,8 +15,11 @@ sudo apt update -qq
 sudo apt install --no-install-recommends software-properties-common dirmngr
 ```
 `--no install recommends` install only the main packages, not extra recommended ones 
+
 `dirmngr` - A background service used by GPG (GNU Privacy Guard).
+
           - Handles key management, especially for fetching and verifying public keys from key servers.
+          
           - Required when adding secure package repositories (e.g., via apt-key or when importing GPG keys).
 
 ### add the signing key (by Michael Rutter) for these repos
