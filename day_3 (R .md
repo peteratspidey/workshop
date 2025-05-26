@@ -1,9 +1,10 @@
 # intro to R
 
 ## Installation can be done via [CRAN](https://cran.r-project.org)
+***all steps are mentioned there***
 * `Rstudio` GUI based
 * `Rbase` CLI based 
-  ***all steps are mentioned there***
+  
 
 ### for installing via terminal 
 ```bash
