@@ -90,3 +90,4 @@ chmod 755 fastqc
 ```bash
 ./fastqc
 ```
+***after this it will open a iteractive FASTQC environment go to FILE and then OPEN to work on file***
