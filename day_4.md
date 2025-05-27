@@ -17,6 +17,10 @@ png("plot.png")
 pdf("myplot.pdf")
 svg("myplot.svg")
 ```
+## with parameters
+```r
+png("plot.png", width=800, height=600)
+```
 * this will create a png file and stores the plot into it
 
 ## for writing the comment use "#"
