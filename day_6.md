@@ -68,7 +68,7 @@ Each section starts with `>>Section Name` and ends with `>>END_MODULE`.
 6. mutlithreading - Speeds up processing using multiple CPU cores
 
 ## installation of FASTQC (if not installed already)
-
+## install java
 ```bash
 Ubuntu / Mint: sudo apt install default-jre
 ```
