@@ -11,6 +11,12 @@ png("plot.png")
 plot(1,2)
 dev.off()
 ```
+## saving files as png , pdf, svg
+```r
+png("plot.png")
+pdf("myplot.pdf")
+svg("myplot.svg")
+```
 * this will create a png file and stores the plot into it
 
 ## for writing the comment use "#"
