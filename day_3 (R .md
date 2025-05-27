@@ -80,3 +80,11 @@ Rscript test.r
    `r
    library("package_name")
    ***if not output means package is installed, if not installed it will show error
+4. if found some error try this
+   ```bash
+   sudo apt-get update
+   sudo apt-get install libcurl4-openssl-dev libssl-dev libxml2-dev
+   ```
+5. check the installation
+   ```r
+   library(Biostrings)
