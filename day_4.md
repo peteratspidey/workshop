@@ -1,4 +1,6 @@
 # the notes for the class day 4 on R language
+
+
 ## to check the current working directory
 ```r
  get wd()
