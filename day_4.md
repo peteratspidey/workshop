@@ -3,6 +3,13 @@
 ```r
  get wd()
  ```
+## plotting in R via terminal
+```r
+png("plot.png")
+plot(1,2)
+dev.off()
+```
+* this will create a png file and stores the plot into it
 
 ## for writing the comment use "#"
 ```r
