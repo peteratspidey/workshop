@@ -1,5 +1,24 @@
 # intro to R
+## there are 3 ways to run R scripts
+1. via terminal using text editor
+ 1. open terminal
+ 2. run
+ ```bash
+ gedit test.r &
+ ```
+ 3. text editor will open type urs commands of r
+ 4. close and save the file
+ 5. run the script using 
+ ```bash
+Rscript test.r
+``` 
 
+2. via R environment into terminal
+   1. type `R` in terminal
+   2. this will open R IDE
+   3. type ur code here
+
+3. using Rstudio
 ## Installation can be done via [CRAN](https://cran.r-project.org)
 ***all steps are mentioned there***
 * `Rstudio` GUI based
