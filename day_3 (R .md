@@ -1,24 +1,5 @@
 # intro to R
-## there are 3 ways to run R scripts
-1. via terminal using text editor
- 1. open terminal
- 2. run
- ```bash
- gedit test.r &
- ```
- 3. text editor will open type urs commands of r
- 4. close and save the file
- 5. run the script using 
- ```bash
-Rscript test.r
-``` 
 
-2. via R environment into terminal
-   1. type `R` in terminal
-   2. this will open R IDE
-   3. type ur code here
-
-3. using Rstudio
 ## Installation can be done via [CRAN](https://cran.r-project.org)
 ***all steps are mentioned there***
 * `Rstudio` GUI based
@@ -57,3 +38,45 @@ sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_
 ```bash
 sudo apt install --no-install-recommends r-base
 ```
+## there are 3 ways to run R scripts
+1. via terminal using text editor
+ 1. open terminal
+ 2. run
+ ```bash
+ gedit test.r &
+ ```
+ 3. text editor will open type urs commands of r
+ 4. close and save the file
+ 5. run the script using 
+ ```bash
+Rscript test.r
+``` 
+
+2. via R environment into terminal
+   1. type `R` in terminal
+   2. this will open R IDE
+   3. type ur code here
+
+3. using Rstudio
+
+## installing packages
+1. make a R script  and then run it
+ example:- * open a file name packages.R
+           * type install.packages("package_name")
+           * save and close the file
+           * run using `Rscript packages.R`
+3. install packages in R IDE
+ example:- * type `R` in to terminal and enter into R environment
+           * type install.packages("package_name")
+           * then use enter to run
+## install some imp packages
+1. ggplot2 - for plotting
+2. BiocManager- link to install Bio packages related to NGS analysis
+    * Biostrings - using biocmanager
+    * ```r
+      BiocManager::install("Biostrings")
+      ```
+3. to check if some package is installed or not
+   `r
+   library("package_name")
+   ***if not output means package is installed, if not installed it will show error
