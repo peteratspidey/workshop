@@ -1,4 +1,41 @@
-# NGS file formats, Quality control and preprocessing
+# Workflow
+## first WetLab (before NGS)
+1. sample collection
+   - process of collecting sample
+   - example:- blood , tissue, saliva, soil, water etc.
+2. nucleic acid extraction
+   - by enzymes or kit based methods to extract DNA or RNA.
+   - for `DNA`.
+     1. cell lysis -mechanical (vortexing, bead beating), chemical (SDS detergents), enzymatic (lysozyme for bacteria, proteinase K), thermal.
+     2. protein digestion - proteinase K is used to degrade histones and other proteins bound to DNA. clears proteins contaminants
+     3. purification- (separates DNA from other cell debris, protein and lipids) phenol-chloroform extraction , silica column-based kits (qiagen), magnetic bead-based purification (automated)
+     4. DNA precipitation - isopropanol or ethanol (to precipitate DNA ), salt -- DNA is not soluble in alcohol hence forms a pellet after centrifugation.
+     5. washing- pellet is washed with 70% ethanol to remove residual salts and solvents.
+     6. resuspension - clear DNA is dissolved in TE buffer or nuclease free water for storage.
+   - for `RNA`
+     1. sample preparation- work in rnase- free conditions (wear gloves, use rnase-free tubes, tips and reagents  
+     2. cell lysis- TRIzol - inactivate RNAses , release RNA into solution 
+     3.  phase separation - add chloroform , mix and centrifuge. results in 3 layers (top aqueous layer- contains RNA, interphase - contains DNA , organic - contains protein and ligands)
+     4.  RNA precipitation - add isopropapnol or ethanol to aqueous layer- incubate and centrifuge - forms RNA pellet.
+     5.  washing - wash pellet with 75% ethanol to remove salts and impurities
+     6.  resuspension- air dry the pellet and resuspend in RNAse-free water or TE buffer.
+     7.  optional- to remove any contaminating DNA treat RNA with DNAse 1 ( if u are using RNA for RT-PCR or RNA-seq
+3. Quality and Quantity check
+   - `nanodrop` - measures purity
+   - `Qubit` - measures accurate concentration using fluorescent dyes
+   - `AGE` - agarose gel electrophoresis checks for integrity and degradation
+   - `bioanalyser/Tapestation`- precise size and quality profiling 
+4. Library preparation - raw DNA/RNA to be processed into a `library` ( a format that the sequencer can read)
+   - for `DNA` 
+     - `fragmentation` - enzymatic cutting of DNA into small fragments
+     - `end repair` - fixing the ends of the fragments
+     - `A-tailing` - adding adenine overhangs
+     - `Adaptor ligation` - adding specific sequences to both ends
+     - `PCR amplification`
+
+
+
+## NGS file formats, Quality control and preprocessing
 * `NGS` seq methods - illumina pacbio
 * `FASTQ` is common fromat for storing NGS ( it contain quality of the read)
 * `QC` is done before the assembly process
@@ -54,7 +91,7 @@ Each section starts with `>>Section Name` and ends with `>>END_MODULE`.
 * tool for trimming and cleaning illumina sequencing data.
 * it is used to
  * remove adapters
- * trim low quality bases
+ * trim low quality bases or N bases
  * discard short or poor quality reads
 
 ***This is often the first step in NGS data analysis before alignment or assembly.***
