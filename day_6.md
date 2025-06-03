@@ -31,7 +31,11 @@
      - `end repair` - fixing the ends of the fragments
      - `A-tailing` - adding adenine overhangs
      - `Adaptor ligation` - adding specific sequences to both ends
-     - `PCR amplification`
+     - `PCR amplification` - amplifies the fragments
+   - for `RNA-seq`
+     - reverse transcription - convert RNA to cDNA
+     - them same library preparation as DNA
+***adaptors include `index barcode` enabling many samples run in one sequencing lane***
 
 
 
