@@ -1,9 +1,14 @@
+
+# NGS 
+sequences millions of DNA fragments at same time parallely
+provide high throughput data ( handle large amount of data and can produce large output quickly and efficiently)
+
 # Workflow
 ## first WetLab (before NGS)
-1. sample collection
+1. `sample collection`
    - process of collecting sample
    - example:- blood , tissue, saliva, soil, water etc.
-2. nucleic acid extraction
+2. `nucleic acid extraction`
    - by enzymes or kit based methods to extract DNA or RNA.
    - for `DNA`.
      1. cell lysis -mechanical (vortexing, bead beating), chemical (SDS detergents), enzymatic (lysozyme for bacteria, proteinase K), thermal.
@@ -27,17 +32,23 @@
    - `bioanalyser/Tapestation`- precise size and quality profiling 
 4. Library preparation - raw DNA/RNA to be processed into a `library` ( a format that the sequencer can read)
    - for `DNA` 
-     - `fragmentation` - enzymatic cutting of DNA into small fragments
+     - `fragmentation` - enzymatic cutting of DNA into small fragments by using enzymes or high freq sound-waves
      - `end repair` - fixing the ends of the fragments
-     - `A-tailing` - adding adenine overhangs
-     - `Adaptor ligation` - adding specific sequences to both ends
-     - `PCR amplification` - amplifies the fragments
+     - `A-tailing` - adding adenine overhangs 
+     - `Adaptor ligation` - adding specific sequences to both ends (also contains index)
+     - `PCR amplification` - amplifies the fragments 
    - for `RNA-seq`
      - reverse transcription - convert RNA to cDNA
      - them same library preparation as DNA
 ***adaptors include `index barcode` enabling many samples run in one sequencing lane***
-
-
+***libraries are then checked for quality for low reads and high reads and N bases***
+5. sequencing (NGS SYSTEMS)-
+   * sequencing by synthesis - (illumina) 
+   * nanopore sequencing
+   * single molecule real-time
+   * pyrosequencing
+   * sequencing by ligation
+   * ion semiconductor sequencing
 
 ## NGS file formats, Quality control and preprocessing
 * `NGS` seq methods - illumina pacbio
