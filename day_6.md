@@ -25,12 +25,12 @@ provide high throughput data ( handle large amount of data and can produce large
      5.  washing - wash pellet with 75% ethanol to remove salts and impurities
      6.  resuspension- air dry the pellet and resuspend in RNAse-free water or TE buffer.
      7.  optional- to remove any contaminating DNA treat RNA with DNAse 1 ( if u are using RNA for RT-PCR or RNA-seq
-3. Quality and Quantity check
+3. `Quality and Quantity check`
    - `nanodrop` - measures purity
    - `Qubit` - measures accurate concentration using fluorescent dyes
    - `AGE` - agarose gel electrophoresis checks for integrity and degradation
    - `bioanalyser/Tapestation`- precise size and quality profiling 
-4. Library preparation - raw DNA/RNA to be processed into a `library` ( a format that the sequencer can read)
+4. `Library preparation` - raw DNA/RNA to be processed into a `library` ( a format that the sequencer can read)
    - for `DNA` 
      - `fragmentation` - enzymatic cutting of DNA into small fragments by using enzymes or high freq sound-waves
      - `end repair` - fixing the ends of the fragments
@@ -42,7 +42,7 @@ provide high throughput data ( handle large amount of data and can produce large
      - them same library preparation as DNA
 ***adaptors include `index barcode` enabling many samples run in one sequencing lane***
 ***libraries are then checked for quality for low reads and high reads and N bases***
-5. sequencing (NGS SYSTEMS)-
+5. `sequencing (NGS SYSTEMS)`-
    * sequencing by synthesis - (illumina) 
    * nanopore sequencing
    * single molecule real-time
