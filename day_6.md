@@ -160,11 +160,13 @@ chmod 755 fastqc
    - `reads` - to check the quality of the file (select quality)
    - `FASTA/FASTQ` - to download the fastq file
 ***check on filtered to get the quality trimming and clipped to get adaptor cliping***
+*after downloading if u got 2 file - it is paired end data , if got one file it is then single end data*
 
 ## open fastqc program and run file
 1. open the fastq file by using `./fastqc`
 2. go to `file` and `open` the downloaded file here for analysis
-3. if adaptor content is received then go for `trimmomatic`.
+3. save the report into html format - file -> save as 
+4. if adaptor content is received then go for `trimmomatic`.
 
 ## download the trimmomatic
 1. go to the [trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
@@ -172,13 +174,16 @@ chmod 755 fastqc
 ```bash
 java -jar trimmomatic-0.39.jar SE -phred33 input.fq.gz output.fq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 ```
-4. for paired end -
+3. for paired end -
 ```bash
 java -jar trimmomatic-0.39.jar PE input_forward.fq.gz input_reverse.fq.gz output_forward_paired.fq.gz output_forward_unpaired.fq.gz output_reverse_paired.fq.gz output_reverse_unpaired.fq.gz ILLUMINACLIP:adapter/TruSeq3-PE.fa:2:30:10:2:True LEADING:3 TRAILING:3 MINLEN:36
 ```
-5. This will perform the following:
+4. This will perform the following:
     * Remove adapters (ILLUMINACLIP:TruSeq3-PE.fa:2:30:10)
     * Remove leading low quality or N bases (below quality 3) (LEADING:3)
     * Remove trailing low quality or N bases (below quality 3) (TRAILING:3)
     * Scan the read with a 4-base wide sliding window, cutting when the average quality per base drops below 15 (SLIDINGWINDOW:4:15)
     * Drop reads below the 36 bases long (MINLEN:36)
+5. after commands execution it will show the result of the trimmomatic run
+6. this output is used for QC process
+7. 
