@@ -112,12 +112,16 @@ Each section starts with `>>Section Name` and ends with `>>END_MODULE`.
 ***This is often the first step in NGS data analysis before alignment or assembly.***
 
 ### features of the trimmomatic
-1. adapter trimming - removes adapter sequences that can interfere with analysis.
-2. quality trimming - cuts bases from read ends if quality is below a threshold.
-3. slidling window - scan reads in a window and trims when average qaulity drops
-4. minimum length filter - Discards reads that become too short after trimming
-5. paired-end and single-end support - Can handle both types of reads
-6. mutlithreading - Speeds up processing using multiple CPU cores
+* ILLUMINACLIP: Cut adapter and other illumina-specific sequences from the read.
+* SLIDINGWINDOW: Perform a sliding window trimming, cutting once the average quality within the window falls below a threshold.
+* LEADING: Cut bases off the start of a read, if below a threshold quality
+* TRAILING: Cut bases off the end of a read, if below a threshold quality
+* CROP: Cut the read to a specified length
+* HEADCROP: Cut the specified number of bases from the start of the read
+* MINLEN: Drop the read if it is below a specified length
+* TOPHRED33: Convert quality scores to Phred-33
+* TOPHRED64: Convert quality scores to Phred-64
+
 
 ## installation of FASTQC (if not installed already)
 ## install java
@@ -143,3 +147,38 @@ chmod 755 fastqc
 ./fastqc
 ```
 ***after this it will open a iteractive FASTQC environment go to FILE and then OPEN to work on file***
+
+
+## download a fastq file
+1. open [SRA](https://www.ncbi.nlm.nih.gov/sra) to download a fastq file
+2. search for any virus etc
+3. then click on any entries to open
+4. then click on `RUN`
+6. then check for the entries
+   - `biosamples` - for details of the sample or organism
+   - `analysis` - for taxonomical analysis
+   - `reads` - to check the quality of the file (select quality)
+   - `FASTA/FASTQ` - to download the fastq file
+***check on filtered to get the quality trimming and clipped to get adaptor cliping***
+
+## open fastqc program and run file
+1. open the fastq file by using `./fastqc`
+2. go to `file` and `open` the downloaded file here for analysis
+3. if adaptor content is received then go for `trimmomatic`.
+
+## download the trimmomatic
+1. go to the [trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
+2. for single end -
+```bash
+java -jar trimmomatic-0.39.jar SE -phred33 input.fq.gz output.fq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+```
+4. for paired end -
+```bash
+java -jar trimmomatic-0.39.jar PE input_forward.fq.gz input_reverse.fq.gz output_forward_paired.fq.gz output_forward_unpaired.fq.gz output_reverse_paired.fq.gz output_reverse_unpaired.fq.gz ILLUMINACLIP:adapter/TruSeq3-PE.fa:2:30:10:2:True LEADING:3 TRAILING:3 MINLEN:36
+```
+5. This will perform the following:
+    * Remove adapters (ILLUMINACLIP:TruSeq3-PE.fa:2:30:10)
+    * Remove leading low quality or N bases (below quality 3) (LEADING:3)
+    * Remove trailing low quality or N bases (below quality 3) (TRAILING:3)
+    * Scan the read with a 4-base wide sliding window, cutting when the average quality per base drops below 15 (SLIDINGWINDOW:4:15)
+    * Drop reads below the 36 bases long (MINLEN:36)
