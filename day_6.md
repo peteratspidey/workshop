@@ -175,9 +175,10 @@ chmod 755 fastqc
             - faster and cheaper 
             - less data generated
             - suitable for applications like RNA-seq expression analysis
-`Paired-end sequecing`- sequencer reads the fragments from both ends
+
+   `Paired-end sequecing`- sequencer reads the fragments from both ends
             - **output** - two reads per fragments  with a known insert size
-3. for single end -
+4. for single end -
 ```bash
 java -jar trimmomatic-0.39.jar SE -phred33 input.fq.gz output.fq.gz ILLUMINACLIP:adapters/TruSeq3-SE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 ```
