@@ -95,5 +95,5 @@ $$
 `Genome fraction`  
 
 $$
-\text{Genome fraction} = \frac{total \no \of \aligned \sequence in refernces genome}{genome size}
+\text{Genome fraction} = \frac{\text{total no of aligned sequence in refernces genome}}{\text{genome size}}
 $$
