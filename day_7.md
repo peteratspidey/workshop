@@ -97,3 +97,20 @@ $$
 $$
 \text{Genome fraction} = \frac{\text{total no of aligned sequence in refernces genome}}{\text{genome size}}
 $$
+
+    Lower L50 = better (fewer contigs used → more continuous assembly)
+
+    Higher N50 = better (longer contigs → more complete sequences)
+
+
+## N50
+ * when contigs are assembled in order of descending length
+ * then the contig at which the length becomes 50 % of the genome length . that contig called `N50`
+ * used to define contiguity of the genome
+
+## L50 
+ * no of contigs that assembled to cover atleast the 50% of the genome length , that no is called L50
+ * simply tells how many biggest pieces are assembled to make genome
+
+> Lower L50 = better (fewer contigs used → more continuous assembly)
+> Higher N50 = better (longer contigs → more complete sequences)
