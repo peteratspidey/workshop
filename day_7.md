@@ -92,7 +92,8 @@ $$
 * L - average read length
 * G - length of the original genome
 
-`Genome fraction` 
+`Genome fraction`  
+
 $$
-\text{Genome fraction} = \frac{ total no of aligned sequence in refernces genome} {genome size }
+\text{Genome fraction} = \frac{total no of aligned sequence in refernces genome}{genome size}
 $$
