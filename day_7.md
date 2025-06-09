@@ -88,3 +88,11 @@ reads added to assembly in opposite direction or some places of the reads are mi
 $$
 \text{AVG coverage} = \frac{N \times L}{G}
 $$
+* N - no. of reads
+* L - average read length
+* G - length of the original genome
+
+`Genome fraction` 
+$$
+\text{Genome fraction} = \frac{ total no of aligned sequence in refernces genome} {genome size }
+$$
