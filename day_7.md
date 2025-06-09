@@ -54,5 +54,35 @@
 
 
 ## assembly is done in two ways
-1. **DE-novo assembly** - Assembling a genome from scratch, without any reference genome.
-2. **Preference based assembly** - 
+1. **DE-novo assembly**
+    -  Assembles a genome from scratch, using only sequencing reads
+    -  Does not require a reference genome
+    -  Uses overlaps between reads to build contigs and scaffolds
+    -  tools :- `SPAdes` ,`velvet` , `Canu`, `Flye`
+    -  Useful for new or poorly studied organisms
+    -  Can discover novel genes, sequences, and structural variations
+    -  Computationally intensive and sensitive to sequencing errors
+    -  May struggle with repetitive regions
+
+2. **Reference based assembly** -
+    - Aligns sequencing reads to an existing reference genome
+    - Requires a high-quality reference genome
+    - Easier and faster than de novo assembly
+    - Tools: `BWA`, `Bowtie2`, `HISAT2`, `STAR`
+    - Ideal for studying variants, gene expression, or resequencing
+    - Limited in detecting novel sequences or large structural changes
+    - Highly accurate in well-characterized regions
+
+### predicted genes
+no of genes predicted in the quast's predicting module in assembly
+
+*sometimes 5' or 3' ends are missing in the contigs*
+
+### complete genes
+complete gene with 5' and 3' end
+
+### mis-assembly
+reads added to assembly in opposite direction or some places of the reads are missing.
+
+## coverage and depth of the assembly
+$$ AVG_coverage = N * L/G $$
