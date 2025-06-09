@@ -85,4 +85,6 @@ complete gene with 5' and 3' end
 reads added to assembly in opposite direction or some places of the reads are missing.
 
 ## coverage and depth of the assembly
-$$ AVG\coverage = N * L/G $$
+$$
+\text{AVG\ coverage} = \frac{N \times L}{G}
+$$
