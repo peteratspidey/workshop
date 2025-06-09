@@ -47,8 +47,8 @@
 **low-complexity regions**
 - less complex-region
 - where bases are simple or repeatitive
-![Alt text](![My Image](https://github.com/peteratspidey/workshop/blob/supporting-images/path/to/your-image.png?raw=true)
-)
+![My Image](https://github.com/peteratspidey/workshop/blob/supporting-images/path/to/your-image.png?raw=true)
+
 
 ## assembly is done in two ways
 1. **DE-novo assembly** - Assembling a genome from scratch, without any reference genome.
