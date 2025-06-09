@@ -6,6 +6,10 @@
 5. quality of assembly
 6. gene prediction
 7. replicates
+
+ ![My Image](https://github.com/peteratspidey/workshop/blob/main/vivek's%20First%20Illustration(1).jpeg)
+
+
 # Assembly statistics, assembly quality assessment
 * genome assembly statistics
 * quality of genome assembly
@@ -47,7 +51,6 @@
 **low-complexity regions**
 - less complex-region
 - where bases are simple or repeatitive
-![My Image](https://github.com/peteratspidey/workshop/blob/main/vivek's%20First%20Illustration(1).jpeg)
 
 
 ## assembly is done in two ways
