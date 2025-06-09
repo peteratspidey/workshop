@@ -86,5 +86,5 @@ reads added to assembly in opposite direction or some places of the reads are mi
 
 ## coverage and depth of the assembly
 $$
-\text{AVG\ coverage} = \frac{N \times L}{G}
+\text{AVG coverage} = \frac{N \times L}{G}
 $$
