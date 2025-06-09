@@ -47,7 +47,7 @@
 **low-complexity regions**
 - less complex-region
 - where bases are simple or repeatitive
-![My Image](https://github.com/peteratspidey/workshop/blob/supporting-images/path/to/your-image.png?raw=true)
+![My Image](https://github.com/peteratspidey/workshop/blob/main/vivek's%20First%20Illustration(1).jpeg)
 
 
 ## assembly is done in two ways
