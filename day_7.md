@@ -97,11 +97,8 @@ $$
 $$
 \text{Genome fraction} = \frac{\text{total no of aligned sequence in refernces genome}}{\text{genome size}}
 $$
-
-    Lower L50 = better (fewer contigs used → more continuous assembly)
-
-    Higher N50 = better (longer contigs → more complete sequences)
-
+> this is important when we want to check data of `SNP calling`, `mutation` , `Anti microbial resistance mutation`, `disease variant mutation`
+> for this type of studies we need atleast 50% coverage of the genome
 
 ## N50
  * when contigs are assembled in order of descending length
@@ -114,3 +111,50 @@ $$
 
 > Lower L50 = better (fewer contigs used → more continuous assembly)
 > Higher N50 = better (longer contigs → more complete sequences)
+
+## Quast
+- a quality assesment tool for evaluating and comparing genome assemblies
+- can evaluate assemblies with reference as well as without references (quast select the best from the multiple assemblies)
+- useful for comparing multiple assemblies
+- it uses NA50 (or NGA50) = Like N50, but only counts aligned (matched with reference genome and correctly assembled blocks, based on a reference genome.
+- **In QUAST and NA50**:
+  During QUAST's analysis:
+   * It splits contigs into "aligned blocks" (good parts)
+   * Misassemblies or unaligned regions are excluded
+   * NA50 is then calculated using just these aligned blocks
+
+## SAM 
+  - sequence aligned map - aligned sequence info with reference sequence
+  - human readable format
+  - each line represent one read alignment
+  - larger than BAM in size
+
+## BAM
+  - binary version of SAM
+  - compressed , compact and non human readable
+  - small in size
+  - requires SAM tools to view
+    
+## input data for Quast
+  1. **sequences**
+     - assemblies and reference genomes in FASTA format (compressed in zip,gzip of bzip2)
+> a reference genome with multiple chromosome can be provided in a single fasta file
+  2. **Reads** ( for supporting the assemblies) 
+> illumina, pacbio , orford nanopore reads in FASTA format or in aligned BAM/SAM format
+ 3. **gene and operon**
+> files with gene and operon positions in reference genome, these files in GFF(gene feature format) and BED (  format (used to evaluate how well the genome assembly align .
+
+## assembly completeness assesment 
+genome assembly stats do no tell about the
+ - presence of the essential gene
+ - completeness of the gene content
+ - gene integrity
+ - Biological function
+ - lineage specific gene expectations
+ - duplicated genes
+ - start and stop codon accuracy
+
+## such quantification of completeness is done by
+* BUSCO
+   -benchmarkin universal single copy orthologs 
+* CEGMA
