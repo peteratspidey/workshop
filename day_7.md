@@ -74,7 +74,7 @@
     - Highly accurate in well-characterized regions
 
 ### predicted genes
-no of genes predicted in the quast's predicting module in assembly
+> no of genes predicted in the quast's predicting module in assembly
 
 *sometimes 5' or 3' ends are missing in the contigs*
 
@@ -155,6 +155,24 @@ genome assembly stats do no tell about the
  - start and stop codon accuracy
 
 ## such quantification of completeness is done by
-* BUSCO
-   -benchmarkin universal single copy orthologs 
-* CEGMA
+* **BUSCO**    (benchmarkin universal single copy orthologs)
+   - uses orthologs info to define(make) BUSCO sets (sets that represent core genes) across 6 major phylogenetic groups
+   - groups are - vertebrates , arthropoda, fungi, plantae, bacteria, others
+   - these busco sets are mainly - conserved genes , single copy across species from these 6 groups .
+   - it is used to assess the completeness of the genome assemblies, annotation, or gene prediction.
+   - uses Augustus to predict the gene models (coding regions)
+   > augustus - gene predicting tool , predict where the genes, intron , exon and coding regions are , in a given DNA sequence
+   - compares query with reference BUSCO gene set
+   - BUSCO has a list of essential genes that should exist in almosst every organism
+   - 
+> pipeline - series of connected steps or tools that automatically run one after another to process data and produce results.
+
+* **CEGMA** (core eukaryotic gene mapping approach)
+   - it is a pipeline/approach
+   - find orthologs (evolutionary conserved genes) from the known set of essential genes.
+   - uses KOGs db to identify the essential genes.
+   - uses tBLASTn to identify the core gene set from query genome
+ 
+ * **KOGs** - eukaryotic orthologous groups
+    - core essential genes found across eukarytic organism
+    - genes are grouped based on orthology 
