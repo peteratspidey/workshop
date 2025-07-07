@@ -1,23 +1,29 @@
-# the notes for the class day 4 on R language
-
-
+# advanced concept in R language
+## some shorcut keys 
+- `ctrl` + `enter` to execute the code and create a next new line
+- 
 ## to check the current working directory
 ```r
  get wd()
  ```
-## plotting in R via terminal
+## plotting in R
+```r
+plot(1,2)
+```
+### for terminal 
 ```r
 png("plot.png")
 plot(1,2)
 dev.off()
 ```
-## saving files as png , pdf, svg
+
+### saving files as png , pdf, svg
 ```r
 png("plot.png")
 pdf("myplot.pdf")
 svg("myplot.svg")
 ```
-## with parameters
+### with parameters
 ```r
 png("plot.png", width=800, height=600)
 ```
