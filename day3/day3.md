@@ -90,4 +90,11 @@ Rscript test.r
    library(Biostrings)
 
 ## 2. installtion of Rstudio in linux
-## go to this link [!Rstudio](https://posit.co/download/rstudio-desktop/) and download the .deb file 
+- go to this link [Rstudio](https://posit.co/download/rstudio-desktop/) and download the .deb file
+- open terminal and type this
+```bash
+sudo dpkg -i <package_name.deb>
+```
+> replace the name of the package from the dowloaded .deb file
+- once installation is done open the GUI of Rstudio
+
