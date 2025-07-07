@@ -1,4 +1,4 @@
-# Day 2 content of the workshop on Linux
+# Basic commands in Linux
 ## basic commands
 
 ### for checking the date
