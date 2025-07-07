@@ -117,7 +117,7 @@ plot(1,2)
 ```R
 install.packages("ggplot2")
 ```
-2.install a sample test data repo
+2. install a sample test data repo
 ```R
 install.packages("hflights")
 ```
