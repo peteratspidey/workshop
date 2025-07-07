@@ -98,3 +98,39 @@ sudo dpkg -i <package_name.deb>
 > replace the name of the package from the dowloaded .deb file
 - once installation is done open the GUI of Rstudio
 
+## overview of the Rstudio
+### console
+> a commandline interface of Rstudio execute code line by line
+> similar to Rbase of  linux terminal
+
+### few commnads of R 
+#### to check the present working directory 
+```R
+getwd()
+```
+#### to plot a dummy plot
+```R
+plot(1,2)
+```
+#### installation of packages from Cran repository
+1. ggplot 
+```R
+install.packages("ggplot2")
+```
+2.install a sample test data repo
+```R
+install.packages("hflights")
+```
+3. BiocManager installation
+```R
+install.packages("BiocManager")
+```
+4. install packages using BiocManager
+```R
+BiocManager::install("Biostrings")
+```
+5. to check the install libraries
+```R
+library(Biostrings)
+```
+
