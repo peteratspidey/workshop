@@ -65,7 +65,7 @@ print (class_students[c(1,3,5)])
 
 ## ignoring the elements on basis of index
 ```r
-print (class_students[-4]
+print (class_students[-4])
 ```
 *this will ignore 4th elemnt but print rest*
 
