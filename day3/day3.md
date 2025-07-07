@@ -1,4 +1,4 @@
-# intro to R
+# R installation
 
 ## Installation can be done via [CRAN](https://cran.r-project.org)
 ***all steps are mentioned there***
