@@ -9,15 +9,19 @@ student_record = data.frame("name"= class_students,"marks" = score_students, "qu
 
 ## to check the dimensions
 `dim()` function is use to check the rows and columns
+> inside parenthesis put ur table for dimension check
+
 
 ## to fetch the data of particular row and column
 ```r
 print(student_record[1,2])
 ```
+
 ## for continous row and particular column or particular row and continous column
 ```r
 print(student_record[1:3,2])
 ```
+
 ```r
 print(student_record[1,1:2])
 ```
@@ -67,6 +71,8 @@ for ( i in 1:10){
 print ("vivek")
 }
 ```
+> in R  range function is not used instead we have to give the range manually using ":"
+
 ## count the total elements the column and total sum of all  
 ```r
 count= 0
