@@ -156,6 +156,7 @@ genome assembly stats do no tell about the
 
 ## such quantification of completeness is done by
 * [BUSCO](https://academic.oup.com/bioinformatics/article/31/19/3210/211866) (benchmarkin universal single copy orthologs)
+> It is a bioinformatics tool used to assess the completeness and quality of genome assemblies, annotated gene sets, and transcriptomes by searching for sets of genes that are expected to be present as single copies in almost all species from a given phylogenetic lineage.
    - uses orthologs info to define(make) BUSCO sets (sets that represent core genes) across 6 major phylogenetic groups
    - groups are - vertebrates , arthropoda, fungi, plantae, bacteria, others
    - these busco sets are mainly - conserved genes , single copy across species from these 6 groups .
