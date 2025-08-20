@@ -195,8 +195,8 @@ genome assembly stats do no tell about the
     
 ### b) Three Analysis Types
 A. Genome Assembly
-    * Input: Contigs from genome assembly.
-    * Process:
+ * Input: Contigs from genome assembly.
+ * Process:
         - `tblastn` is used to identify candidate regions by comparing protein queries to nucleotide sequences.
         - `AUGUSTUS` (a gene prediction tool) is used for predicting gene structures in these regions.
         - `hmmsearch` finds candidate proteins via profile HMMs.
