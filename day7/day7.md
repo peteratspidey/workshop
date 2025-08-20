@@ -155,7 +155,7 @@ genome assembly stats do no tell about the
  - start and stop codon accuracy
 
 ## such quantification of completeness is done by
-* **BUSCO**    (benchmarkin universal single copy orthologs)
+* [BUSCO](https://academic.oup.com/bioinformatics/article/31/19/3210/211866) (benchmarkin universal single copy orthologs)
    - uses orthologs info to define(make) BUSCO sets (sets that represent core genes) across 6 major phylogenetic groups
    - groups are - vertebrates , arthropoda, fungi, plantae, bacteria, others
    - these busco sets are mainly - conserved genes , single copy across species from these 6 groups .
@@ -166,7 +166,7 @@ genome assembly stats do no tell about the
    - BUSCO has a list of essential genes that should exist in almosst every organism
 > pipeline - series of connected steps or tools that automatically run one after another to process data and produce results.
 
-* **CEGMA** (core eukaryotic gene mapping approach)
+* [CEGMA](https://academic.oup.com/bioinformatics/article/23/9/1061/272633) (core eukaryotic gene mapping approach)
    - it is a pipeline/approach
    - find orthologs (evolutionary conserved genes) from the known set of essential genes.
    - uses KOGs db to identify the essential genes.
