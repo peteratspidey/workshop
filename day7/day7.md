@@ -184,4 +184,4 @@ genome assembly stats do no tell about the
    - if assembly is good means less no of missing and fragmented copies
    - more the N the better is the assembly
 
-    
+    ![busco](https://github.com/peteratspidey/workshop/blob/main/images/busco_framework.jpg)
