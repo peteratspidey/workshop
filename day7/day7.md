@@ -137,7 +137,7 @@ $$
     
 ## input data for Quast
   1. **sequences**
-     - assemblies and reference genomes in FASTA format (compressed in zip,gzip of bzip2)
+> assemblies and reference genomes in FASTA format (compressed in zip,gzip of bzip2)
 > a reference genome with multiple chromosome can be provided in a single fasta file
   2. **Reads** ( for supporting the assemblies) 
 > illumina, pacbio , orford nanopore reads in FASTA format or in aligned BAM/SAM format
@@ -164,7 +164,6 @@ genome assembly stats do no tell about the
    > augustus - gene predicting tool , predict where the genes, intron , exon and coding regions are , in a given DNA sequence
    - compares query with reference BUSCO gene set
    - BUSCO has a list of essential genes that should exist in almosst every organism
-   - 
 > pipeline - series of connected steps or tools that automatically run one after another to process data and produce results.
 
 * **CEGMA** (core eukaryotic gene mapping approach)
