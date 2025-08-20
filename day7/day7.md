@@ -1,4 +1,4 @@
-# Steps of NGS 
+# *Comprehensive Workflow for Genomic Data Processing, Assembly, and Gene Prediction*
 1. raw data
 2. quality check
 3. trimming
