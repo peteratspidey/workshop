@@ -1,4 +1,4 @@
-# steps 
+# Steps of NGS 
 1. raw data
 2. quality check
 3. trimming
