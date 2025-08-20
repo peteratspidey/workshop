@@ -203,23 +203,23 @@ A. Genome Assembly
     Outputs: Detected BUSCOs, passed to the BUSCO Classifier for final evaluation.
     
 B. Annotated Gene Set
-    * Input: GFF or protein FASTA of annotated genes.
-    * Process:
+* Input: GFF or protein FASTA of annotated genes.
+* * Process:
         Candidate proteins are directly searched using hmmsearch.
     * Outputs: Results to BUSCO Classifier.
 
 C. Transcriptome
-    * Input: Transcriptome (e.g., RNA-seq assembly).
-    * Process:
+ * Input: Transcriptome (e.g., RNA-seq assembly)
+ * Process:
         - `tblastn` finds the longest ORFs in each transcript as candidate proteins.
         - `hmmsearch` identifies matching genes.
     Outputs: Results to BUSCO Classifier.
 
 ### c) BUSCO Classifier and Report
-   * The BUSCO Classifier categorizes genes as "Complete," "Duplicated," "Fragmented," or "Missing."
-    * Outputs are compiled into a report summarizing the quality and completeness of the data set.
+* The BUSCO Classifier categorizes genes as "Complete," "Duplicated," "Fragmented," or "Missing."
+* Outputs are compiled into a report summarizing the quality and completeness of the data set.
  
-* [RAST](https://rast.nmpdr.org/)
+ ## [RAST](https://rast.nmpdr.org/)
 - useful for bacterial genome
 - after assembly put in RAST 
   - it will predict gene
