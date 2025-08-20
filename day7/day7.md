@@ -219,7 +219,19 @@ C. Transcriptome
 ### c) BUSCO Classifier and Report
 * The BUSCO Classifier categorizes genes as "Complete," "Duplicated," "Fragmented," or "Missing."
 * Outputs are compiled into a report summarizing the quality and completeness of the data set.
- 
+  
+## BUSCO Sampling Space and Metrics (Right Panel)
+1. High Universality
+   - Definition: BUSCO groups are considered universal if they are present as single-copy genes in over 90% of species within a major clade (like vertebrates, arthropods, or fungi).
+   - Pie charts show the proportion of such “universal” BUSCOs across different taxonomic groups (e.g., vertebrates, arthropods, fungi).
+   - Blue shading: Indicates groups where orthologs are present in >90% of the species.
+   - Other shadings: Show groups where orthologs are present in 50–90% and 0–50% of species.
+
+2. Low Duplicability
+   - Definition: Most BUSCO gene sets are "single-copy," meaning that >90% of species have only one copy of these genes.
+   - Bar graph: Shows the fraction of ortholog groups according to what percentage of species have these genes as single-copy. The majority fall in the 90–100% bin, meaning they’re reliably single-copy across most species.
+   - Interpretation: Strong indicator that BUSCOs are good benchmarks—present in nearly all species, and typically only once per genome.
+
  ## [RAST](https://rast.nmpdr.org/)
 - useful for bacterial genome
 - after assembly put in RAST 
