@@ -174,4 +174,14 @@ genome assembly stats do no tell about the
  
  * **KOGs** - eukaryotic orthologous groups
     - core essential genes found across eukarytic organism
-    - genes are grouped based on orthology 
+    - genes are grouped based on orthology
+  
+   * gVolante (webserver)
+   - has the busco, cegma dataset
+   - consists of core vertebrate genes, mammalia , vertebreta , eukaryota etc. 
+   - BUSCO notation is - C for complete, F for fragmneted , M for  missing , N for the no of genes used
+   - complete genes found with more than one copy is duplicated.
+   - if assembly is good means less no of missing and fragmented copies
+   - more the N the better is the assembly
+
+    
