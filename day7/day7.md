@@ -176,7 +176,7 @@ genome assembly stats do no tell about the
     - core essential genes found across eukarytic organism
     - genes are grouped based on orthology
   
-   * gVolante (webserver)
+   * [gVolante](https://gvolante.riken.jp/analysis.html)
    - has the busco, cegma dataset
    - consists of core vertebrate genes, mammalia , vertebreta , eukaryota etc. 
    - BUSCO notation is - C for complete, F for fragmneted , M for  missing , N for the no of genes used
@@ -185,3 +185,11 @@ genome assembly stats do no tell about the
    - more the N the better is the assembly
 
     ![busco](https://github.com/peteratspidey/workshop/blob/main/images/busco_framework.jpg)
+ 
+* [RAST](https://rast.nmpdr.org/)
+- useful for bacterial genome
+- after assembly put in RAST 
+  - it will predict gene
+  - gene annotation (functional annotations)
+  - dont use reference genome for comparison like Quast (no NA50 etc)
+  - it tells no of complete predicted genes, partial predicted genes , 
