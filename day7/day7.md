@@ -185,6 +185,38 @@ genome assembly stats do no tell about the
    - more the N the better is the assembly
 
     ![busco](https://github.com/peteratspidey/workshop/blob/main/images/busco_framework.jpg)
+
+ ## The BUSCO Framework (Left Panel)
+### a) Dataset: Signature of BUSCO Genes
+  - `AA consensus sequences`: Reference amino acid sequences for each BUSCO gene family.
+  - `Block profiles & Profile HMMs`: Profiles and hidden Markov models constructed from multiple sequence alignments, used for sensitive homology searches.
+  - `Score + length cutoffs`: Criteria for detecting true orthologous genes and filtering out potential false positives or partial matches.
+    
+### b) Three Analysis Types
+A. Genome Assembly
+    * Input: Contigs from genome assembly.
+    * Process:
+        - `tblastn` is used to identify candidate regions by comparing protein queries to nucleotide sequences.
+        - `AUGUSTUS` (a gene prediction tool) is used for predicting gene structures in these regions.
+        - `hmmsearch` finds candidate proteins via profile HMMs.
+    Outputs: Detected BUSCOs, passed to the BUSCO Classifier for final evaluation.
+    
+B. Annotated Gene Set
+    * Input: GFF or protein FASTA of annotated genes.
+    * Process:
+        Candidate proteins are directly searched using hmmsearch.
+    * Outputs: Results to BUSCO Classifier.
+
+C. Transcriptome
+    * Input: Transcriptome (e.g., RNA-seq assembly).
+    * Process:
+        - `tblastn` finds the longest ORFs in each transcript as candidate proteins.
+        - `hmmsearch` identifies matching genes.
+    Outputs: Results to BUSCO Classifier.
+
+### c) BUSCO Classifier and Report
+   * The BUSCO Classifier categorizes genes as "Complete," "Duplicated," "Fragmented," or "Missing."
+    * Outputs are compiled into a report summarizing the quality and completeness of the data set.
  
 * [RAST](https://rast.nmpdr.org/)
 - useful for bacterial genome
