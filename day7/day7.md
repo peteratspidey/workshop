@@ -172,11 +172,12 @@ genome assembly stats do no tell about the
    - uses KOGs db to identify the essential genes.
    - uses tBLASTn to identify the core gene set from query genome
  
- * **KOGs** - eukaryotic orthologous groups
+* [KOGs](https://www.ncbi.nlm.nih.gov/research/cog#kog) eukaryotic orthologous groups
     - core essential genes found across eukarytic organism
     - genes are grouped based on orthology
+
   
-   * [gVolante](https://gvolante.riken.jp/analysis.html)
+ * [gVolante](https://gvolante.riken.jp/analysis.html)
    - has the busco, cegma dataset
    - consists of core vertebrate genes, mammalia , vertebreta , eukaryota etc. 
    - BUSCO notation is - C for complete, F for fragmneted , M for  missing , N for the no of genes used
@@ -184,7 +185,7 @@ genome assembly stats do no tell about the
    - if assembly is good means less no of missing and fragmented copies
    - more the N the better is the assembly
 
-    ![busco](https://github.com/peteratspidey/workshop/blob/main/images/busco_framework.jpg)
+![busco](https://github.com/peteratspidey/workshop/blob/main/images/busco_framework.jpg)
 
  ## The BUSCO Framework (Left Panel)
 ### a) Dataset: Signature of BUSCO Genes
