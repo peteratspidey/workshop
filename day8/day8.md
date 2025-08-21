@@ -3,7 +3,7 @@
 ## Genomics
 
 Genetic Material Organization: From Cell to Base Pairs
-
+![genomics](https://github.com/peteratspidey/workshop/blob/main/day8/generated-image.png)
 * Cell
 > The cell is the fundamental unit of life in all living organisms. Within many cells, there is a specialized structure called the nucleus that serves as the control center, containing the cell’s genetic information.
 
