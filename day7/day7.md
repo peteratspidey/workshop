@@ -23,7 +23,7 @@
 ## for assembly quality there are 3 key points
 1. `conguity` -  how contigs are there?
 2. `completeness` - how much of the genome is captured in assembly as compared to the genome size
-3. `correctness` -  do contigs assembled represent genome
+3. `correctness` -  do contigs assembled represent genome (cant be used in DEnovo assembly
 
 ## problems in genome assembly
 1. **short length reads**
@@ -240,9 +240,28 @@ C. Transcriptome
   - dont use reference genome for comparison like Quast (no NA50 etc)
   - it tells no of complete predicted genes, partial predicted genes
 
-## hands on 
-### download the [reference genome](https://www.ncbi.nlm.nih.gov/datasets/genome/)
-1. click on this link and open it and then search for any organism and download the `.FNA` fasta file for the genome
-2. after downloading, open this link [gVolante](https://gvolante.riken.jp/analysis.html) and open the downloaded file into upload section 
+## hands on gvolante
+1. download the [reference genome](https://www.ncbi.nlm.nih.gov/datasets/genome/) 
+2. click on this link and open it and then search for any organism and download the `.FNA` fasta file for the genome
+3. after downloading, unzip it open this link [gVolante](https://gvolante.riken.jp/analysis.html) and open the downloaded file `.FNA` into upload section
+4. enter the project name and email for result mail
+5. then select the taxonomic group matching with ur selected organism
+6. run the analysis the will get update via mail when it is done
 
+## hands on quast
+1. open this [github link](https://github.com/ablab/quast)
+2. then download the zip or clone the repo via copying this [link](https://github.com/ablab/quast.git) or use conda - To install this package run one of the following:
+```bash
+conda install bioconda::quast
+```
+```bash
+conda install bioconda/label/cf201901::quast
+```
+3. full installation steps and how to use it mentioned also on this [github repo](https://github.com/ablab/quast)
+4. required 2 contigs , 1 reference , 1 gene annotation file from ncbi, 2 files of forward and reverse reads
 
+## hands on augustus gene prediction tool
+1. go on to this link [augustus](https://bioinf.uni-greifswald.de/webaugustus/prediction/create)
+2. and enter the file and select the organism (ur assembly file organism should match with the organism given on the augustus and then click on run
+3. will get the result update via mail once it is done.
+4. 
