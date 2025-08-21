@@ -238,4 +238,11 @@ C. Transcriptome
   - it will predict gene
   - gene annotation (functional annotations)
   - dont use reference genome for comparison like Quast (no NA50 etc)
-  - it tells no of complete predicted genes, partial predicted genes , 
+  - it tells no of complete predicted genes, partial predicted genes
+
+## hands on 
+### download the [reference genome](https://www.ncbi.nlm.nih.gov/datasets/genome/)
+1. click on this link and open it and then search for any organism and download the `.FNA` fasta file for the genome
+2. after downloading, open this link [gVolante](https://gvolante.riken.jp/analysis.html) and open the downloaded file into upload section 
+
+
